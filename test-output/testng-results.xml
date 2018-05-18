@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="164" started-at="2018-05-14T04:54:26Z" finished-at="2018-05-14T04:54:26Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="164" started-at="2018-05-14T04:54:26Z" finished-at="2018-05-14T04:54:26Z">
+      <class name="uPromiseTestCase.TC1_CreatingUpromiseId">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:uPromiseTestCase.TC1_CreatingUpromiseId@1610302]" name="beforeSuite" is-config="true" duration-ms="1906" started-at="2018-05-14T04:54:24Z" finished-at="2018-05-14T04:54:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:uPromiseTestCase.TC1_CreatingUpromiseId@1610302]" name="setData" is-config="true" duration-ms="0" started-at="2018-05-14T04:54:26Z" finished-at="2018-05-14T04:54:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:uPromiseTestCase.TC1_CreatingUpromiseId@1610302]" name="beforeClass" is-config="true" duration-ms="4" started-at="2018-05-14T04:54:26Z" finished-at="2018-05-14T04:54:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="loginAndLogout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:uPromiseTestCase.TC1_CreatingUpromiseId@1610302]" name="loginAndLogout" duration-ms="0" started-at="2018-05-14T04:54:26Z" data-provider="fetchData" finished-at="2018-05-14T04:54:26Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void uPromiseTestCase.TC1_CreatingUpromiseId.loginAndLogout(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : fetchData]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void uPromiseTestCase.TC1_CreatingUpromiseId.loginAndLogout(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : fetchData
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:513)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:691)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndLogout -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:uPromiseTestCase.TC1_CreatingUpromiseId@1610302]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-05-14T04:54:26Z" finished-at="2018-05-14T04:54:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:uPromiseTestCase.TC1_CreatingUpromiseId@1610302]" name="afterSuite" is-config="true" duration-ms="935" started-at="2018-05-14T04:54:26Z" finished-at="2018-05-14T04:54:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- uPromiseTestCase.TC1_CreatingUpromiseId -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
