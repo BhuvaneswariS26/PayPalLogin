@@ -107,6 +107,20 @@ public class SeMethods extends Reporter implements WdMethods{
 	public WebElement locateElement(String locValue) {
 		return driver.findElementById(locValue);
 	}
+	public void startApp(String browser, String url) {
+		if (browser.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+			driver = new ChromeDriver();			
+		} else {
+			System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver.exe");
+			driver = new FirefoxDriver();
+		}
+		driver.manage().window().maximize();
+		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		System.out.println("The Browser is Launched");
+
+	}
 
 	public void type(WebElement ele, String data) {
 		try {
@@ -266,16 +280,21 @@ public class SeMethods extends Reporter implements WdMethods{
 		}
 	}
 
-	public void verifySelected(WebElement ele) {
+	public boolean verifySelected(WebElement ele) {
 		try {
 			if(ele.isSelected()) {
 				reportStep("The element "+ele+" is selected","PASS");
+				return true;
 			} else {
 				reportStep("The element "+ele+" is not selected","FAIL");
+				return false;
 			}
+			
 		} catch (WebDriverException e) {
 			reportStep("WebDriverException : "+e.getMessage(), "FAIL");
 		}
+		return true;
+		
 	}
 
 	public void verifyDisplayed(WebElement ele) {

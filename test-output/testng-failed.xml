@@ -3,18 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="uPromiseTestCase.TC1_CreatingUpromiseId">
+      <class name="testCase.TC001_Signup">
         <methods>
-          <include name="afterTest"/>
-          <include name="beforeSuite"/>
-          <include name="loginAndLogout"/>
-          <include name="afterSuite"/>
           <include name="setData"/>
+          <include name="afterTest"/>
+          <include name="InitaiateSignup"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- uPromiseTestCase.TC1_CreatingUpromiseId -->
+      </class> <!-- testCase.TC001_Signup -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
