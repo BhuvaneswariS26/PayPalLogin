@@ -19,11 +19,18 @@ public class TC001_Signup extends ProjectMethods{
 		dataSheetName="TC001";
 	}
 	@Test
-	public void InitaiateSignup() {
+	public void InitiateSignup(String countryName,String emailId,String password) {
 		
 		new HomePagePaypal()
 		.clickSignUp()
-		.clickContinueButton();
+		.clickContinueButton()
+		.selectCountryName(countryName)
+		.enterEmailId(emailId)
+		.enterPassword(password)
+		.enterconfirmPassword(password)
+		.clickConitueBtn()
+		.clickNotARobot();
+		
 		
 		
 	}

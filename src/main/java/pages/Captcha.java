@@ -7,20 +7,23 @@ import org.openqa.selenium.support.PageFactory;
 
 import wdMethods.ProjectMethods;
 
-public class SignUpPage extends ProjectMethods{
-	
-	public SignUpPage() {
+public class Captcha extends ProjectMethods{
+
+	public Captcha() {
 		PageFactory.initElements(driver, this);
+
 	}
 	
-	@FindBy(how=How.LINK_TEXT,using="Next")
-	private WebElement eleContinue;
-	
-	public SignUpFree clickContinueButton()
-	{
-		click(eleContinue);
-		return new SignUpFree();
-	}
+	@FindBy(how=How.ID,using="recaptcha-anchor")
+	private WebElement clickCheckBox;
 	
 
-}
+	public Captcha clickNotARobot()
+	{
+		click(clickCheckBox);
+		return this;
+		
+	}
+	}
+
+
